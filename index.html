@@ -7,10 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <style>.container-fluid { height: 100vh }</style>
     <title>Home Page</title>
   </head>
   <body>
+    <div class="container-fluid">
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
       <div class="tradingview-widget-container__widget"></div>
@@ -105,54 +106,55 @@
               "s": "CBOT:ZB1!",
               "d": "T-Bond"
             },
-            {
-              "s": "CBOT:UB1!",
-              "d": "Ultra T-Bond"
+                {
+                  "s": "CBOT:UB1!",
+                  "d": "Ultra T-Bond"
+                },
+                {
+                  "s": "EUREX:FGBL1!",
+                  "d": "Euro Bund"
+                },
+                {
+                  "s": "EUREX:FBTP1!",
+                  "d": "Euro BTP"
+                },
+                {
+                  "s": "EUREX:FGBM1!",
+                  "d": "Euro BOBL"
+                }
+              ],
+              "originalTitle": "Bonds"
             },
             {
-              "s": "EUREX:FGBL1!",
-              "d": "Euro Bund"
-            },
-            {
-              "s": "EUREX:FBTP1!",
-              "d": "Euro BTP"
-            },
-            {
-              "s": "EUREX:FGBM1!",
-              "d": "Euro BOBL"
+              "title": "Forex",
+              "symbols": [
+                {
+                  "s": "FX:EURUSD"
+                },
+                {
+                  "s": "FX:GBPUSD"
+                },
+                {
+                  "s": "FX:USDJPY"
+                },
+                {
+                  "s": "FX:USDCHF"
+                },
+                {
+                  "s": "FX:AUDUSD"
+                },
+                {
+                  "s": "FX:USDCAD"
+                }
+              ],
+              "originalTitle": "Forex"
             }
-          ],
-          "originalTitle": "Bonds"
-        },
-        {
-          "title": "Forex",
-          "symbols": [
-            {
-              "s": "FX:EURUSD"
-            },
-            {
-              "s": "FX:GBPUSD"
-            },
-            {
-              "s": "FX:USDJPY"
-            },
-            {
-              "s": "FX:USDCHF"
-            },
-            {
-              "s": "FX:AUDUSD"
-            },
-            {
-              "s": "FX:USDCAD"
-            }
-          ],
-          "originalTitle": "Forex"
+          ]
         }
-      ]
-    }
-      </script>
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
     </div>
-    <!-- TradingView Widget END -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
